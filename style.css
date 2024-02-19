@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+    
+}
+.container{
+    margin-top: 10px;
+    display : grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    border:solid;
+    border-width:1px;
+    
+
+}
+@media (max-width: 450px){
+    .container{
+        grid-template-columns: 100px 100px;
+        row-gap: 15px;
+    }
+    .moves{
+        width:200px;
+    }
+
+}
+button{
+            font-size:45px;
+            height:80px;
+            width:80px;
+            border: 3px solid white;
+            border-radius:50px;
+            background-color:transparent;
+            box-shadow: 2px 2px 10px rgba(255,255,255,0.3);
+            transition: opacity 0.4s;
+            margin-right:20px;
+            color:white;
+
+
+}
+button:active{
+    opacity:0.8;
+    box-shadow: 0 0 0;
+    transform: translateX(2px) translateY(2px);
+}
+
+p{
+    color:white;
+    font-size:20px;
+    margin:0;
+}
+.score,.moves{
+    margin-top: 20px;
+}
+.result{
+    margin-top: 20px;
+}
+.emoji{
+    font-size: 40px;
+}
